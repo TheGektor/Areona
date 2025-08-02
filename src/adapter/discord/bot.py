@@ -45,6 +45,7 @@ class DiscordBot(commands.Bot):
         await self.load_extension('src.adapter.discord.ticket.cogs.ticket_commands')
         await self.load_extension('src.adapter.discord.ticket.cogs.setup_commands')
         await self.load_extension('src.adapter.discord.ticket.cogs.admin_commands')
+        await self.load_extension('src.adapter.discord.ticket.cogs.settings_panel_commands')
         # Register new bot settings cog
         await setup_bot_settings(self)
         
